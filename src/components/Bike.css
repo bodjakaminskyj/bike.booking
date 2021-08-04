@@ -1,0 +1,30 @@
+.bike-info{
+    margin: 20px;
+    padding: 10px;
+    display: block;
+    border: solid green;
+    border-radius: 10px;
+}
+.busy {
+    border: solid #F2994A;
+}
+.unavailable{
+    border: solid #EB5757;
+}
+.bike, .status{
+    position: absolute;
+}
+.status{
+    display: block;
+}
+.delete{
+    display: block;
+    text-align: right;
+}
+.price, .delete{
+    text-align: right;
+}
+.price{
+    margin: 0;
+}
+{}

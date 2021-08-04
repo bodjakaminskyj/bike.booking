@@ -1,0 +1,25 @@
+.footer{
+    float: left;
+    width: 100%;
+    background: #696969;
+    margin-top: 25px;
+
+}
+.footer h1{
+    text-align: right;
+    font-family: Saira, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #CBCACA;
+    padding: 20px;
+
+
+
+}
+.footer h1 label{
+    margin: 15px;
+    color: #FFFFFF;
+    padding-right: 30px;
+    font-size: 24px;
+}

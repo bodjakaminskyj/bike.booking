@@ -1,0 +1,38 @@
+
+.add-bike{
+    width: 40%;
+    float: right;
+    border-right: 1px #E8E8E8;
+
+}
+.add-bike input {
+    width: 320px;
+    height: 40px;
+    border: 1px #E8E8E8;
+    border-radius: 5px;
+    background: #E8E8E8;
+    margin: 10px 10px 10px 10px;
+}
+#description{
+    width: 666px;
+    height: 110px;
+    border: 1px #E8E8E8;
+    border-radius: 5px;
+    background: #E8E8E8;
+    margin: 10px 10px;
+}
+input[type=submit]{
+    width: 320px;
+    height: 40px;
+    margin: 10px;
+    background: #696969;
+    border-radius: 5px;
+    font-family: Saira, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

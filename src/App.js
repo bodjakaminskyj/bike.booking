@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Bike from './components/Bike';
+import AddBike from './components/AddBike';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import {loadBike} from "./store";
+import { useSelector } from "react-redux";
+import {TopPanel} from "./components/TopPanel";
+import {BottomPanel} from "./components/BottomPanel";
+import {Statistic} from "./components/Statistic";
+
 
 function App() {
+  const dispatch = useDispatch();
+  const { bikes } = useSelector((state) => state);
+  useEffect(() => {
+    dispatch(loadBike());
+
+  }, [dispatch]);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <TopPanel/>
+        <div className="content">
+          <div id='bikes'>
+            {bikes.map((bike, i) =>
+                <Bike key={i}
+                      bikes={bike}
+                />)}
+          </div>
+
+          <AddBike/>
+          <Statistic/>
+        </div>
+        <BottomPanel/>
+      </div>
   );
 }
 
